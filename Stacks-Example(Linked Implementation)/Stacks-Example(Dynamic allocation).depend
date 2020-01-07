@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578318240 source:f:\projects\c-programs\stacks-example(dynamic allocation)\main.c
+	<stdio.h>
+	<stdlib.h>
+
