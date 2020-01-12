@@ -48,7 +48,7 @@ void ENQueue(queue *q){
         queueElementType item;
         scanf("%d",&item);
         np->element=item;
-        if(q->front==NULL&q->rear==NULL){
+        if(q->front==NULL&&q->rear==NULL){
             q->front=q->rear=np;
         }else{
             q->rear->next=np;

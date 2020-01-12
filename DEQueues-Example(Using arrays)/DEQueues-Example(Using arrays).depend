@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578815267 source:f:\projects\c-programs\datastructures\dequeues-example(using arrays)\main.c
+	<stdio.h>
+	<stdlib.h>
+
