@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578820410 source:f:\projects\c-programs\datastructures\dequeues-example(linked implementation)\main.c
+	<stdio.h>
+	<stdlib.h>
+
