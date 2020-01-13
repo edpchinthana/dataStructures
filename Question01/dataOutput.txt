@@ -1,0 +1,133 @@
+
+
+Sort by title ascending......
+
+
+------BOOK 1------
+Book Code   : Boo2
+Title       : C#_Dictionary
+Copies      : 12
+Price       : 1650
+
+------BOOK 2------
+Book Code   : Boo1
+Title       : C_Programming
+Copies      : 17
+Price       : 1450
+
+------BOOK 3------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 4------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 5------
+Book Code   : Boo3
+Title       : MyElectronics
+Copies      : 15
+Price       : 2100
+
+Sort by title ascending......
+
+
+------BOOK 1------
+Book Code   : Boo3
+Title       : MyElectronics
+Copies      : 15
+Price       : 2100
+
+------BOOK 2------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 3------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 4------
+Book Code   : Boo1
+Title       : C_Programming
+Copies      : 17
+Price       : 1450
+
+------BOOK 5------
+Book Code   : Boo2
+Title       : C#_Dictionary
+Copies      : 12
+Price       : 1650
+
+Sort by price descending......
+
+
+------BOOK 1------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 2------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 3------
+Book Code   : Boo1
+Title       : C_Programming
+Copies      : 17
+Price       : 1450
+
+------BOOK 4------
+Book Code   : Boo2
+Title       : C#_Dictionary
+Copies      : 12
+Price       : 1650
+
+------BOOK 5------
+Book Code   : Boo3
+Title       : MyElectronics
+Copies      : 15
+Price       : 2100
+
+Sort by price descending......
+
+
+------BOOK 1------
+Book Code   : Boo3
+Title       : MyElectronics
+Copies      : 15
+Price       : 2100
+
+------BOOK 2------
+Book Code   : Boo2
+Title       : C#_Dictionary
+Copies      : 12
+Price       : 1650
+
+------BOOK 3------
+Book Code   : Boo1
+Title       : C_Programming
+Copies      : 17
+Price       : 1450
+
+------BOOK 4------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075
+
+------BOOK 5------
+Book Code   : Boo4
+Title       : Learn_linux01
+Copies      : 18
+Price       : 1075

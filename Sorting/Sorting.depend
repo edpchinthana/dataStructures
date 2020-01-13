@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578939931 source:f:\projects\c-programs\datastructures\sorting\main.c
+	<stdio.h>
+	<stdlib.h>
+
