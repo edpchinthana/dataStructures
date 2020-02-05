@@ -41,16 +41,16 @@ void createContactList(ContactList *cl){
 
 void addContact(ContactList *cl){
     char name[100];
-    char number[10];
+    char number[12];
     printf("\n\n--------Add Contacts-------");
     if(isFull(cl)){
         printf("\nSorry contact list is full");
     }else{
-        printf("\nName : ");
+        printf("\nName : \n");
         scanf("%s",&name);
-        printf("Number  : ");
+        printf("Number  : \n");
         scanf("%s",&number);
-
+    printf("name %s",name);
         Node *newNode;
         newNode = (Node*)malloc(sizeof(Node));
         strcpy(newNode->name,name);
@@ -79,11 +79,11 @@ void deleteContact(ContactList *cl){
         printf("\nSearch by\t1. Name\t2. Number");
         printf("\nEnter your choice : ");
         scanf("%d",&choice);
-        printf("Keyword : ");
+        printf("Keyword : \n");
         scanf("%s",&keyword);
 
 
-        if(choice!=1||choice!=2){
+        if(choice!=1&&choice!=2){
             printf("\nWrong choice...please try again");
         }else{
             int check = 0;
@@ -111,8 +111,9 @@ void deleteContact(ContactList *cl){
                 printf("\n-----Contact Information---------");
                 printf("\nName   : %s",temp->name);
                 printf("\nNumber : %s",temp->number);
-                printf("\nDo you want to delete(y/n)?");
+                printf("\nDo you want to delete(y/n)?\n");
                 char a;
+                scanf("%c",&a);
                 scanf("%c",&a);
                 if(a=='y'){
                     Node *tempPrev = temp->prev;
@@ -135,11 +136,42 @@ void deleteContact(ContactList *cl){
 }
 
 void viewContacts(ContactList *cl){
-    printf("\n----------View Contacts-----------");
+    printf("\n\t----------View Contacts-----------");
     if(isEmpty(cl)){
         printf("\nSorry contact list is empty..");
     }else{
         Node *temp = cl->head;
+        int y=0;
+        printf("\n\n -----------------------------------------------------");
+        printf("\n|    |          Name          |    Telephone Number   |");
+        printf("\n -----------------------------------------------------");
+        while(temp!=NULL){
+            int a = strlen(temp->name);
+            int b = (24-a-1)/2;
+            int c = strlen(temp->number);
+            int d = (24-c-1)/2;
+
+            printf("\n| %02d |",y);
+            for(int x=0;x<b;x++){
+                printf(" ");
+            }
+            printf(" %s",temp->name);
+            for(int x=0;x<b;x++){
+                printf(" ");
+            }
+            printf("|");
+            for(int x=0;x<d;x++){
+                printf(" ");
+            }
+            printf(" %s",temp->number);
+            for(int x=0;x<d;x++){
+                printf(" ");
+            }
+            printf("|");
+            temp=temp->next;
+            y++;
+        }
+        printf("\n -----------------------------------------------------");
 
     }
 }
@@ -160,13 +192,47 @@ int menu(){
     }
 }
 
+void contactsMenu(ContactList *cl){
+    printf("\n\n----------------Contacts-Menu----------------");
+    printf("\n\t1. Add contacts");
+    printf("\n\t2. Update contats");
+    printf("\n\t3. Delete contacts");
+    printf("\n\t4. View contacts");
+    printf("\n\t5. Exit to main menu");
+    printf("\nEnter your choice : ");
+    int a;
+    scanf("%d",&a);
+    switch(a){
+        case 1:
+            addContact(cl);
+            contactsMenu(cl);
+            break;
+        case 2:
+            break;
+        case 3:
+            deleteContact(cl);
+            contactsMenu(cl);
+            break;
+        case 4:
+            viewContacts(cl);
+            contactsMenu(cl);
+            break;
+        case 5:
+        break;
+    }
+}
+
 int main()
 {
-
+    ContactList cl;
+    createContactList(&cl);
     int x=0;
     while(x!=3){
         x=menu();
         switch(x){
+            case 1:
+                contactsMenu(&cl);
+                break;
             case 3:
                 exit(1);
                 break;
