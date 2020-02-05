@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1578922134 source:/media/pasindu/Studies/Projects/C-Programs/DataStructures/LinearSearch/main.c
+	<stdio.h>
+	<stdlib.h>
+

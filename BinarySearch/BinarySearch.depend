@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1580871414 source:/media/pasindu/Studies/Projects/C-Programs/DataStructures/BinarySearch/main.c
+	<stdio.h>
+	<stdlib.h>
+
