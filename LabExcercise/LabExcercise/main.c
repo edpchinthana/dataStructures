@@ -46,14 +46,16 @@ void addContact(ContactList *cl){
     if(isFull(cl)){
         printf("\nSorry contact list is full");
     }else{
+        Node *newNode;
+        newNode = (Node*)malloc(sizeof(Node));
+
         printf("\nName : \n");
         scanf("%s",&name);
+        strcpy(newNode->name,name);
+        printf("name %s",name);
         printf("Number  : \n");
         scanf("%s",&number);
     printf("name %s",name);
-        Node *newNode;
-        newNode = (Node*)malloc(sizeof(Node));
-        strcpy(newNode->name,name);
         strcpy(newNode->number,number);
         newNode->next=NULL;
         if(isEmpty(cl)){
@@ -136,7 +138,7 @@ void deleteContact(ContactList *cl){
 }
 
 void viewContacts(ContactList *cl){
-    printf("\n\t----------View Contacts-----------");
+    printf("\n\t    ----------View Contacts-----------");
     if(isEmpty(cl)){
         printf("\nSorry contact list is empty..");
     }else{
@@ -156,7 +158,7 @@ void viewContacts(ContactList *cl){
                 printf(" ");
             }
             printf(" %s",temp->name);
-            for(int x=0;x<b;x++){
+            for(int x=0;x<24-(a+b+1);x++){
                 printf(" ");
             }
             printf("|");
@@ -164,7 +166,7 @@ void viewContacts(ContactList *cl){
                 printf(" ");
             }
             printf(" %s",temp->number);
-            for(int x=0;x<d;x++){
+            for(int x=0;x<23-(c+d+1);x++){
                 printf(" ");
             }
             printf("|");
@@ -174,6 +176,10 @@ void viewContacts(ContactList *cl){
         printf("\n -----------------------------------------------------");
 
     }
+}
+
+void sortContacts(){
+
 }
 
 int menu(){
